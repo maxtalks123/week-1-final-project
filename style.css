@@ -1,34 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
-#Company-title {
-  font-family: "Bungee Spice", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap");
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: -1px -1px 2px #000, -1px -1px 2px #000, -1px -1px 0 #000,
+    -1px -1px 0 #000;
+}
+
+a {
+  color: white;
+}
+
+.links {
+  border: 2px solid white;
+  padding: 15px;
+  max-width: 80vw;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
   text-transform: uppercase;
-  font-family: sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
-
-.feature {
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1607337202714-a88f7abbdee7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center center;
-}
-
-.feature2 {
-  height: 100vh;
-  background-image: url("https://images.unsplash.com/photo-1460804198264-011ca89eaa43?q=80&w=1433&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center center;
-}
-
-.feature3 {
-  height: 100vh;
-  background-image: url("https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-  background-size: cover;
-  background-position: center center;
+header {
+  position: fixed;
+  display: flex;
+  gap: 8rem;
+  align-items: center;
+  z-index: 50;
+  max-width: 100vw;
 }
 .title {
   position: absolute;
@@ -40,17 +41,69 @@
   color: white;
   text-decoration: 5px solid black;
 }
-header {
-  position: fixed;
+.feature {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1607337202714-a88f7abbdee7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center center;
   display: flex;
-  gap: 10rem;
-  align-items: center;
-}
-nav {
-  display: flex;
-  gap: 50px;
-  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
-h1 {
+.feature2 {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1460804198264-011ca89eaa43?q=80&w=1433&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.feature3 {
+  height: 100vh;
+  background-image: url("https://images.pexels.com/photos/1670977/pexels-photo-1670977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  margin-top: 1rem;
+  gap: 80px;
+  align-items: center;
+  color: white;
+}
+#Company-title {
+  font-family: "Bungee Spice", sans-serif;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: yellow;
+}
+
+.links:hover {
+  background-color: white;
+  color: black;
+}
+
+audio {
+  position: absolute;
+  right: 50px;
+  bottom: 6rem;
+  z-index: 1000;
+}
+
+p {
+  position: absolute;
+  right: 70px;
+  color: white;
+  bottom: 10rem;
+  text-decoration: underline;
 }
